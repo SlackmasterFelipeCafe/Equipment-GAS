@@ -1,0 +1,38 @@
+function UpdateQuestionResponseDocs(docID, col, question) {
+  //Created by Phil Brown (pbrown@usgs.gov) 9/6/18
+  //Function outputs column values from an active Gsheet to an existing Gdoc
+  //Function parameters:
+  //var docID = "1dJ55jokEUXr_XV34stTgLCN75Ue_61r1Nxvx_JvUbX8"; // This is the Gdoc ID. For example, if your URL Looks like this: https://docs.google.com/document/d/1SDTSW2JCItWMGkA8cDZGwZdAQa13sSpiYhiH-Kla6VA/edit, THEN the ID would be 1SDTSW2JCItWMKkA8cDZGwZdAQa13sSpiYhiH-Kla6VA
+  //var col = 3; //this is the column to be read for output to the Gdoc
+  //var question = "Would you like to play a game?"; //Text to be posted as a heading to the Gdoc
+  var date = new Date();  
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var doc = DocumentApp.openById(docID);
+  var sheet = ss.getActiveSheet();
+  var lastRow = sheet.getLastRow();
+  var data = sheet.getRange(2, col, (lastRow-1), 1).getValues();// get data - Row, Col, NumRows, NumCol
+  var body = doc.getBody();
+    body.clear();//Clear Documanrnt Body
+    
+  var title = doc.appendParagraph(question)
+    title.setItalic(true);
+    title.setFontSize(14);
+    doc.appendParagraph("");
+  
+  var j = 1
+  for (var i in data){
+    var values = data[i];
+    var postNum = doc.appendParagraph("Post " + j + ":");
+    postNum.setItalic(false);
+    postNum.setFontSize(12);
+    postNum.setBold(true);
+    
+    var postText = doc.appendParagraph(values)
+    postText.setBold(false);
+    
+    j = j+1;
+    doc.appendHorizontalRule()
+    doc.appendParagraph("")
+  }
+    doc.saveAndClose();
+}
