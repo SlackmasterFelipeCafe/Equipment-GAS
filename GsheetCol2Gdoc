@@ -12,7 +12,7 @@ function UpdateQuestionResponseDocs(docID, col, question) {
   var lastRow = sheet.getLastRow();
   var data = sheet.getRange(2, col, (lastRow-1), 1).getValues();// get data - Row, Col, NumRows, NumCol
   var body = doc.getBody();
-    body.clear();//Clear Documanrnt Body
+    body.clear();//Clear Document Body
     
   var title = doc.appendParagraph(question)
     title.setItalic(true);
