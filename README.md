@@ -27,6 +27,8 @@ Google sheet functions that send emails releated to the equipment reservation sy
 - **SendResponseEditEmail**, function that sends an email if a reservation is edited.  Email sends listing of current reservation values
 
 ## EquipmentCalendarFunctions:
+
+Functions used to check and update GGGSC Equipment Calendars
 - **runCalendarCheck**
 - **returnCalendarID**
 - **returnCalendarURL**
