@@ -1,4 +1,4 @@
-# GAS
+# GGGSC GAS - Google Application Scripts being used by the GGGSC 
 US Geological Survey (USGS)
 
 Geology, Geophysics, and Geochemistry Science Center (GGGSC)
@@ -26,5 +26,13 @@ Google sheet functions that send emails releated to the equipment reservation sy
 
 - **SendResponseEditEmail**, function that sends an email if a reservation is edited.  Email sends listing of current reservation values
 
-
-
+## EquipmentCalendarFunctions:
+- **runCalendarCheck**
+- **returnCalendarID**
+- **returnCalendarURL**
+- **CheckCalendarEvents**
+- **deleteBogusRecord**
+- **deleteRow**
+- **EditCalendarEvent**
+- **ManuallyEditCalendarEvent**
+- **manuallyAddEventAddedToSpreadSheet**
