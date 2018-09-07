@@ -1,3 +1,13 @@
+function pushQuestionResponses (){
+ //Created by Phil Brown (pbrown@usgs.gov) 9/6/18
+ //Function call to populate Gdocs from Gsheet values
+  UpdateQuestionResponseDocs('1dJ55jokEUXr_XV34stTgLCN75Ue_61r1Nxvx_JvUbX8', 2,"What are the 3 most important things to you that should be preserved at G3, and why?");
+  UpdateQuestionResponseDocs('1MXfaHh9rLNlkClP1d8DhHgbT1B-gfN7aJKR_d4If74Q', 3,"What are the top 3 things to change at G3, and why?");
+  UpdateQuestionResponseDocs('16SrD4RWrHnwuc29e85YWenCBQ1pt7Mtu0gRC0XxpZcU', 4, "What do most hope a Center Director can accomplish for you?"); 
+  UpdateQuestionResponseDocs('1MCKXcD6rwdILg6EUJTHoDN-kFF8n9_pWsrKK1xvcbPU', 5, "What are you most concerned a Center Director might do?"); 
+  UpdateQuestionResponseDocs('11Uwwm_g-ADssuee2NzRNZv5W1mgyQrX8iHwga9aFyt8', 6, "What advice do you have for me in my role as Center Director?");
+}
+
 function UpdateQuestionResponseDocs(docID, col, question) {
   //Created by Phil Brown (pbrown@usgs.gov) 9/6/18
   //Function outputs column values from an active Gsheet to an existing Gdoc
