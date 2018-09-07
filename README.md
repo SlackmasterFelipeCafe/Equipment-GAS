@@ -38,3 +38,17 @@ Functions used to check and update GGGSC Equipment Calendars
 - **EditCalendarEvent**
 - **ManuallyEditCalendarEvent**
 - **manuallyAddEventAddedToSpreadSheet**
+
+## EquipmentAssignEditURLs:
+
+Functions used to create and check the Google Form Response Edit URLs and ResponseIDs and Calendar Event IDs
+- **mannuallyAssignEditUrlsAndIDs**
+- **assignEditUrls**
+- **CheckIfResponseIdExists**
+- **assignSingleEditUrl**
+
+
+
+
+
+
