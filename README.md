@@ -1,3 +1,3 @@
 # GsheetCol2Gdoc
-Google Application Script that posts a column of data from a google sheet to a Google Doc with a header value of text
+Google Application Script (GAS) that posts a column of data from a Google-Sheet to a Google-Doc with a custom title heading.
 
