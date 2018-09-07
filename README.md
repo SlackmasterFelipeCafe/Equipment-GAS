@@ -47,6 +47,11 @@ Functions used to create and check the Google Form Response Edit URLs and Respon
 - **CheckIfResponseIdExists**
 - **assignSingleEditUrl**
 
+## EquipmentOnFormSubmit:
+
+Function run on equipment reservation Google Form submission
+- **RunOnFormSubmit**
+
 
 
 
