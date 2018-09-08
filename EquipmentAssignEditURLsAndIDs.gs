@@ -49,7 +49,7 @@ function CheckIfResponseIdExists(item, resStartTime, resEndTime, namedValues, va
 // need to figure out if edit URL is same as one that already exists.  response.getId()
 //Figure out how to get a response id and compare it to ones tha
   var formID = 'FormID'; //enter form ID here
-  var form = FormApp.openById(formID);//enter form ID here
+  var form = FormApp.openById(formID);
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('ResponseIDs');
   var sheet2 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Equipment Reservations');//Change the sheet name as appropriate  
   var data = sheet.getDataRange().getValues();
@@ -116,7 +116,8 @@ function CheckIfResponseIdExists(item, resStartTime, resEndTime, namedValues, va
 
 
 function assignSingleEditUrl() {
-  var form = FormApp.openById('1mezt3yHLctSxa9qHsH-i_lPpIwruBRHHyeUCpaEo31o');//enter form ID here
+  var formID = 'FormID'; //enter form ID here
+  var form = FormApp.openById(formID);
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Equipment Reservations');//Change the sheet name as appropriate    
   var data = sheet.getDataRange().getValues();
   var urlCol = 14; // column number where URL's should be populated; A = 1, B = 2 etc
