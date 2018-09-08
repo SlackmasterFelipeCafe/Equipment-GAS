@@ -11,6 +11,8 @@ USGS Profile: https://www.usgs.gov/staff-profiles/philip-j-brown
 
 ORCID: https://orcid.org/0000-0002-2415-7462
 
+GitHub: https://github.com/SlackmasterFelipeCafe
+
 
 ## GsheetCol2Gdoc:
 
