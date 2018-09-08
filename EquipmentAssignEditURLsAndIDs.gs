@@ -1,6 +1,6 @@
 function mannuallyAssignEditUrlsAndIDs() {
   var formID = 'FormID'; //enter form ID here
-  var form = FormApp.openById(FormID);
+  var form = FormApp.openById(formID);
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Equipment Reservations');//Change the sheet name as appropriate    
   var data = sheet.getDataRange().getValues();
   var urlCol = 14; // column number where URL's should be populated; A = 1, B = 2 etc
