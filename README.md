@@ -1,4 +1,4 @@
-# GGGSC Equipment GAS - Google Application Scripts being used by the GGGSC 
+# GGGSC Equipment GAS - Google Application Scripts being used by the GGGSC for field equipment management
 US Geological Survey (USGS)
 
 Geology, Geophysics, and Geochemistry Science Center (GGGSC)
